@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-nnkv
+  namespace: build-e2e-qdej-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:32551990f8899a4acd742fa7c382899ac98146664f1f4701ed32349d463ea204
+        name: container-image
+        resources: {}
+status: {}
