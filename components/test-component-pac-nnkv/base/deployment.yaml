@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: test-component-pac-nnkv
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:32551990f8899a4acd742fa7c382899ac98146664f1f4701ed32349d463ea204
         imagePullPolicy: Always
         name: container-image
         resources:
